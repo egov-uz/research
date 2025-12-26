@@ -26,24 +26,37 @@ The product is adhere, a digital service provided to either businesses or ordina
 
 **VDS** - basically we rent the server as a HaaS and have shared control over hardware (server) between consumer and server provider. However, we won't own the hardware, meaning, as soon as there's an overdue payment fee left behind, there's huge possibility that server providers will reclaim server equipments back without a notice. Also raises privacy concerns in terms of data ownership. [For more, press the link.](https://en.wikipedia.org/wiki/VDS)
 
-The platform that we are going to build is more of data eccentric and does not perform any heavy data processing which requires too much computation power _(a.k.a CPU)_ from servers. **It's more of I/O and network bounded and more focus should be given to these parameters.** Speaking of backend software, most backend frameworks tends to queue requests when server can't keep up with the amount of requests incoming, which will hit more RAM as a mean of data preservation. In order to avoid data loss during service, more space in hard storage should be assured to keep up with the amount of data stored in server. Assuming everything above:
+The platform that we are going to build is more of data eccentric and does not perform any heavy data processing which requires too much computation power _(a.k.a CPU)_ from servers. **It's more of I/O and network bounded and more focus should be given to these parameters.** Data is the first class citizen in the platform, which means, **any kind of ownership over data should be guaranteed, which eliminates any other options except Colocation**. Speaking of backend software, most backend frameworks tends to queue requests when server can't keep up with the amount of requests incoming, which will hit more RAM as a mean of data preservation. In order to avoid data loss during service, more space in hard storage should be assured to keep up with the amount of data stored in server. Assuming everything above:
 
 > Basically, resource prioritization should be something like this:
 > RAM > Hard Storage > CPU
 
 ### Real Life Practices
 
-The screenshot below is taken from a server that's running
+The screenshot below is taken from a server that's running ...
 
-## VDC Providers
+### Options
 
-There are several VDC providers within territoriy of Uzbekistan.
+The following is a suggestion table to serve as a buyer's guide:
 
--
+|Component   |Low End Specifications|Medium End Specification|High End Specifications|
+|------------|:--------------------:|:----------------------:|:---------------------:|
+|CPU         | 12 Core +2GHz        | 24 Core +2GHz          | +32 Core +2GHz        |
+|RAM         | 32GB DDR4+ ECC m.h   | 64GB DDR4+ ECC m.h     | +128GB DDR4+ ECC m.h  |
+|NVME        | 256 GB RAID-1        | 512 GB RAID-4          | +512 GB RAID-4+       |
+|SATA        | 4 TB RAID-4          | 4 TB RAID-4            | +40 TB RAID-4+        |
+
+### Reasoning
+
+*Work in progress*
 
 ## Colocation Providers
 
 ### Hardware Options
+
+This section tries to list all available options whether where to purchase hardware equipments for server deployment.
+
+#### Distributors
 
 During the research, a few server equipment distributors have been found:
 
@@ -53,8 +66,19 @@ During the research, a few server equipment distributors have been found:
 - [Asbis](https://catalog.asbis.uz/category/servers)
 - [Server Sale](https://sale-server.uz/servery/products)
 
+#### Recommended Options
+
+-
+
 ### Colocation Provision
 
 There are few colocation service providers within territory of Uzbekistan.
 
--
+#### List of distributors
+
+- [Uztelecom](https://uztelecom.uz/ru/chastnym-licam/oblachnye-servisy/colocation)
+- [Uzinfocom](https://dc.uz/uzl/page/view?urlname=colocation)
+- [Eskiz](https://eskiz.uz/colocation)
+- [UzCI](https://www.uzsci.net/Uslugi/Colocation)
+- [Comnet](https://comnet.uz/business/colocation)
+- [Sarkor](https://www.sarkor.uz/rus/corporate/c_colocation)
